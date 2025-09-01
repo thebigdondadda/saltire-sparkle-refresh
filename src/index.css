@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - Inspired by Scottish heritage and warmth */
+    --background: 0 0% 100%;
+    --foreground: 210 12% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 12% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 12% 16%;
+
+    /* Scottish Slate Blue - Professional & Trustworthy */
+    --primary: 209 50% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 209 45% 35%;
+    --primary-dark: 209 55% 15%;
+
+    /* Warm Hearth Orange - Comfort & Warmth */
+    --secondary: 25 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 25 80% 65%;
+    --secondary-dark: 25 90% 45%;
+
+    /* Neutral Grays */
+    --muted: 210 10% 96%;
+    --muted-foreground: 210 8% 45%;
+
+    --accent: 210 15% 92%;
+    --accent-foreground: 210 12% 16%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 209 50% 25%;
+
+    --radius: 0.75rem;
+
+    /* Design System Colors */
+    --slate-50: 210 20% 98%;
+    --slate-100: 210 15% 95%;
+    --slate-200: 210 15% 88%;
+    --slate-300: 210 12% 78%;
+    --slate-600: 210 12% 45%;
+    --slate-700: 210 12% 35%;
+    --slate-800: 210 12% 25%;
+    --slate-900: 210 12% 16%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--slate-50)), hsl(var(--slate-100)));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--slate-900) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--slate-900) / 0.1), 0 2px 4px -1px hsl(var(--slate-900) / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--slate-900) / 0.1), 0 4px 6px -2px hsl(var(--slate-900) / 0.05);
+    --shadow-warm: 0 10px 25px -5px hsl(var(--secondary) / 0.3);
+
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+  }
+
+  .dark {
+    --background: 210 12% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 12% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 12% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 209 45% 65%;
+    --primary-foreground: 210 12% 6%;
+
+    --secondary: 25 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 12% 12%;
+    --muted-foreground: 210 8% 60%;
+
+    --accent: 210 12% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --border: 210 12% 20%;
+    --input: 210 12% 20%;
+    --ring: 209 45% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
