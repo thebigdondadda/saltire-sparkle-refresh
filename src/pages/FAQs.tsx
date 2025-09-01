@@ -191,11 +191,7 @@ export default function FAQs() {
                   <Button asChild variant="cta" size="lg">
                     <Link to="/contact-us">Get in Touch</Link>
                   </Button>
-<<<<<<< HEAD
                   <Button asChild variant="outline" size="lg" className="hover:bg-white hover:text-black">
-=======
-                  <Button asChild variant="outline" size="lg">
->>>>>>> f41f0a6b79526de5b2a7066cf29a55a975ea35dd
                     <a href="tel:07939846301">Call 07939 846301</a>
                   </Button>
                 </div>
