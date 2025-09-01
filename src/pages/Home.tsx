@@ -172,7 +172,7 @@ export default function Home() {
               <Link to="/contact-us">Book a Survey</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-white border-white text-black hover:bg-white hover:text-black">
-              <Link to="/our-services">View Our Services</Link>
+              <Link to="/services">View Our Services</Link>
             </Button>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Button asChild variant="cta" size="lg">
-              <Link to="/our-services">Explore All Services</Link>
+              <Link to="/services">Explore All Services</Link>
             </Button>
           </div>
         </div>
@@ -261,7 +261,6 @@ export default function Home() {
               <Link to="/contact-us">Book a Survey</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white text-black bg-white hover:bg-white hover:text-black">
->>>>>>> f41f0a6b79526de5b2a7066cf29a55a975ea35dd
               <a href="tel:07939846301">Call 07939 846301</a>
             </Button>
           </div>
