@@ -27,7 +27,11 @@ const serviceItems = [
 const navItems = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about-us" },
+<<<<<<< HEAD
   { title: "Our Services", href: "/services", hasSubmenu: true },
+=======
+  { title: "Our Services", href: "/our-services", hasSubmenu: true },
+>>>>>>> f41f0a6b79526de5b2a7066cf29a55a975ea35dd
   { title: "Our Process", href: "/our-process" },
   { title: "Gallery", href: "/gallery" },
   { title: "Reviews", href: "/reviews" },
@@ -71,6 +75,7 @@ export function Layout({ children }: LayoutProps) {
                             isActive(item.href) && "bg-accent text-accent-foreground"
                           )}
                         >
+<<<<<<< HEAD
                           <Link to={item.href} className="hover:underline">
                             {item.title}
                           </Link>
@@ -85,6 +90,12 @@ export function Layout({ children }: LayoutProps) {
                                 View All Services
                               </Link>
                             </div>
+=======
+                          {item.title}
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <div className="grid w-80 gap-3 p-4 bg-popover">
+>>>>>>> f41f0a6b79526de5b2a7066cf29a55a975ea35dd
                             {serviceItems.map((service) => (
                               <NavigationMenuLink key={service.title} asChild>
                                 <Link
